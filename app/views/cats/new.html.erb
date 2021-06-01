@@ -1,0 +1,15 @@
+<h1>I found a cat on the street 😿</h1>
+
+<%= render 'form', cat: @cat %>
+
+<!-- Without simple_form:
+<%= form_for @cat do |f| %>
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <%= f.submit %>
+<% end %>
+-->

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  description: MyText
+  claimed: false
+  age: 1
+  color: MyString
+
+two:
+  description: MyText
+  claimed: false
+  age: 1
+  color: MyString

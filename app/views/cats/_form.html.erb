@@ -1,0 +1,12 @@
+<%= simple_form_for cat do |f| %>
+  <%= f.input :color %>
+  <%= f.input :description %>
+  <%= f.input :age %>
+
+  <% if cat.persisted? %>
+    <%= f.input :claimed %>
+  <% end %>
+
+  <%= f.submit 'Save cat information', class: 'btn btn-primary' %> or
+  <%= link_to 'Cancel', cats_path %>
+<% end %>

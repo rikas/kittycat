@@ -1,0 +1,23 @@
+<h1>Missing kittens</h1>
+
+<%= link_to 'I found a cat!', new_cat_path, class: 'btn btn-primary' %>
+
+<div class="mt-4">
+  <% @cats.each do |cat| %>
+    <p>
+      <%#= cat.claimed ? '✔' : '✗' %>
+
+      <% if cat.claimed %>
+        <i class="fas fa-check-square"></i>
+      <% else %>
+        <i class="fas fa-square"></i>
+      <% end %>
+
+      <%= cat.color %> cat <%= cat.age %> years old
+
+      <%= link_to edit_cat_path(cat) do %>
+        <i class="fas fa-edit"></i>
+      <% end %>
+    </p>
+  <% end %>
+</div>
